@@ -4,49 +4,39 @@
             <meta charset="utf-8">
             <title>...</title>
             <meta name="description" content="...">
-            <!--<link type="text/css" rel="stylesheet" href="...">-->
+            <link type="text/css" rel="stylesheet" href="./css/main.css">
     </head>
     <body>
-    	<header>...</header>
+    	<header>
+            <a href="index.html"><img src="" alt="" width="" height="" /></a>
+            <h1>Titre du site</h1>
+            <p class="slogan">Unify the difference</p>
+            <div>
+                <a id="inscription" href="./inscription.html">S'inscrire</a>
+                <p> ou </p>
+                <a id="connexion" href="./connexion.html">Se connecter</a> 
+            </div>           
+        </header>
     	<nav class="principal">
-    		<ol>
+    		<ul>
     			<li><a href="./index.html">Accueil</a></li>
-    			<li><a href="./inscription.html">Rejoignez nous</a></li>
-    			<li><a href="./offresEmplois.html">Offres</a></li>
-    			<li><a href="./galerieCandidats.html">Galerie</a></li>
-    		</ol>
-    		<form class="recherche">
-    			<label>Rechercher</label>
-    			<input type="text" />
-    			<input type="submit" value="OK" />
-    		</form>
+    			<li class="actif"><a href="./offresEmplois.html">Offres</a></li>
+    			<li><a href="./galerieCandidats.html">CVs</a></li>
+    		</ul>
     	</nav>
-	    <section class=content>
-			<form action="" method="">
-				<fieldset id="formGeneral">
-					<label>Nom&nbsp;:</label>
-					<input type="text" />
-					<label>Prénom&nbsp;:</label>
-					<input type="text" />
-					<label>E-mail&nbsp;:</label>
-					<input type="text" />
-					<label>N° tél&nbsp;:</label>
-					<input type="text" />
-					<label>Qui je suis&nbsp;:</label>
-					<select>
-						<option>Candidat</option>
-						<option>Employeur</option>
-					</select>
-				</fieldset>
-				<fieldset id="formCandidats">
 
-				</fieldset>
-				<fieldset id="formEmployeurs">
-
-				</fieldset>
-				<input type=submit />
-			</form>
-		</section>
-		<footer>...</footer>
+    	
+    	<footer>
+            <div class="contact">
+                <h1>Contact</h1>
+                <p>Newton Pham Dang</p>
+                <a href="">newton.phd@gmail.com</a>
+            </div>
+            <div class="services">
+                <h1>Services</h1>
+                <a href="">Les offres d’emploi</a><br />
+                <a href="">Les CVs des candidats</a>
+            </div>
+        </footer>
     </body>
 </html>

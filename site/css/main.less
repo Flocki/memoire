@@ -151,6 +151,16 @@ body{
     margin: 0 auto;
 }
 
+h1{
+    font-weight: bold;
+    color: #416DFF;
+    font-size: 25px;
+}
+
+.hidden{
+    overflow: hidden;
+}
+
 header{
     background-color: #416DFF;
     border-bottom: 1px solid #2C49A9;
@@ -216,11 +226,11 @@ nav{
 #derniersInscrits{
     height: 310px;
     background-color: #C5D9FF;
+    border-top: 3px solid #C1C2C3;
+    border-bottom: 3px solid #C1C2C3;
     margin-top: 30px;
     padding: 20px 120px 20px 160px;
     h1{
-        color: #416DFF;
-        font-size: 25px;
         margin-left: -2px;
     }
     article{
@@ -233,14 +243,215 @@ nav{
         img{
             margin: 2px 4px 4px 4px;
         }
+        p{
+            padding: 5px;
+            font-size: 14px;
+        }
+    }
+}
+
+#dernieresOffres{
+    float: left;
+    width: 600px;
+    margin-left: 160px;
+    h1{
+        margin-left: -2px;
+        padding: 50px 0px 20px 0px;
+    }
+    div{
+        width: 250px;
+        height: 150px;
+        background-color: #fff;
+        border: 3px solid #C1C2C3;
+        font-size: 14px;
+        padding: 5px 5px 0px 5px;
+        margin-bottom: 10px;
+        margin-right: 40px;
+        dt, dd{
+            display: inline-block;
+        }
+        &.offresPaires{
+            float: right;
+            margin-right: 40px;
+            margin-top: -171px;
+        }
+        a{
+            color: #FF6D01;
+            text-decoration: none;
+            margin-left: 127px;
+            margin-top: 20px;
+        }
+    }
+}
+
+#recherche{
+    font-size: 14px;
+    margin-left: 860px;
+    width: 300px;
+    h1{
+        margin-left: -2px;
+        padding: 50px 0px 20px 0px;
+    }
+    label, input, select{
+        display: block;
+    }
+    label{
+        margin-bottom: 5px;
+    }
+    input{
+        width: 250px;
+        font: 14px Verdana, "Sans-serif";
+        border: 3px solid #C1C2C3;
+        margin-bottom: 20px;
+        &#ok{
+            width: 50px;
+            padding: 5px;
+            background-color: #fff;
+            border: opx #fff;
+        }
+    }
+    select{
+        width: 250px;
+        background-color: #fff;
+        border: 3px solid #C1C2C3;
+        margin-bottom: 20px;
+    }
+}
+
+#description{
+    margin-top: 250px;
+    margin-left: 160px;
+    margin-bottom: 50px;
+    font-size: 14px;
+    h1{
+        margin: 50px 0px 20px 0px;
+    }
+    h2{
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        margin-top: 20px;
+    }
+    article{
+        padding: 10px;
+        background-color: #fff;
+        border: 3px solid #C1C2C3;
+        width: 440px;
+        height: 200px;
+        &+article{
+            margin-left: 500px;
+            margin-top: -225px;
+        }
+    }
+}
+
+.ariane{
+    color: #416DFF;
+    margin: 20px 0px 20px 150px;
+    a{
+        color: #416DFF;
+        text-decoration: none;
+    }
+}
+
+#rechercheOffres{
+    background-color: #C5D9FF;
+    border-top: 3px solid #C1C2C3;
+    border-bottom: 3px solid #C1C2C3;
+    padding-left: 150px;
+    h1{
+        margin: 20px 0px 20px 0px;
+    }
+    form{
+        margin-bottom: 20px;
+        label{
+            display: block;
+        }
+        label.region{
+            margin-top: -50px;
+        }
+        .region{
+            margin-left: 300px;
+        }
+        label.contrat{
+            margin-top: -50px;
+        }
+        .contrat{
+            margin-left: 600px;
+        }
+        select{
+            display: block;
+            margin-right: 20px;
+            width: 200px;
+            background-color: #fff;
+            border: 3px solid #C1C2C3;
+            font: 14px Verdana, "Sans-serif";
+        }
+        input{
+            display: block;  
+            margin-left: 900px;
+            margin-top: -25px;
+        }
+    }
+}
+
+#listeOffres{
+    padding-left: 150px;
+    h1{
+        margin: 50px 0px 20px 0px;
+    }
+    article{
+        width: 450px;
+        margin-bottom: 20px;
+        background-color:#fff;
+        border: 3px solid #C1C2C3;
+        padding: 10px;
+        &.offresDroites{
+            float: right;
+            margin-right: 150px;
+            margin-top: -220px;
+        }
+        &.offresEtroites{
+            width: 350px;
+        }
+        &.offresDroites.offresEtroites{
+            margin-right: 250px;
+        }
+        &.offresGauches.offresEtroites{
+            margin-left: 100px;
+        }
+        dt, dd{
+            display: inline-block;
+        }
     }
 }
 
 footer{
     background-color: #416DFF;
     font-size: 0.875em;
+    padding: 15px;
     h1{
         font-size: 1.17em;
+        color: #000;
+        margin-bottom: 15px;
+    }
+    div{
+        width: 175px;
+        &.contact{
+            text-align: right;
+            margin-left: 430px;
+            a{
+                margin-left: -30px;
+            }
+        }
+        &.services{
+            margin-left: 650px;
+            margin-top: -76px;
+        }
+        a{
+            color: #0F246C;
+            text-decoration: none;
+        }
     }
 }
 

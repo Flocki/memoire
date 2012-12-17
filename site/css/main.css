@@ -211,6 +211,14 @@ body {
   width: 1280px;
   margin: 0 auto;
 }
+h1 {
+  font-weight: bold;
+  color: #416DFF;
+  font-size: 25px;
+}
+.hidden {
+  overflow: hidden;
+}
 header {
   background-color: #416DFF;
   border-bottom: 1px solid #2C49A9;
@@ -274,12 +282,12 @@ nav li a {
 #derniersInscrits {
   height: 310px;
   background-color: #C5D9FF;
+  border-top: 3px solid #C1C2C3;
+  border-bottom: 3px solid #C1C2C3;
   margin-top: 30px;
   padding: 20px 120px 20px 160px;
 }
 #derniersInscrits h1 {
-  color: #416DFF;
-  font-size: 25px;
   margin-left: -2px;
 }
 #derniersInscrits article {
@@ -293,12 +301,211 @@ nav li a {
 #derniersInscrits article img {
   margin: 2px 4px 4px 4px;
 }
+#derniersInscrits article p {
+  padding: 5px;
+  font-size: 14px;
+}
+#dernieresOffres {
+  float: left;
+  width: 600px;
+  margin-left: 160px;
+}
+#dernieresOffres h1 {
+  margin-left: -2px;
+  padding: 50px 0px 20px 0px;
+}
+#dernieresOffres div {
+  width: 250px;
+  height: 150px;
+  background-color: #fff;
+  border: 3px solid #C1C2C3;
+  font-size: 14px;
+  padding: 5px 5px 0px 5px;
+  margin-bottom: 10px;
+  margin-right: 40px;
+}
+#dernieresOffres div dt,
+#dernieresOffres div dd {
+  display: inline-block;
+}
+#dernieresOffres div.offresPaires {
+  float: right;
+  margin-right: 40px;
+  margin-top: -171px;
+}
+#dernieresOffres div a {
+  color: #FF6D01;
+  text-decoration: none;
+  margin-left: 127px;
+  margin-top: 20px;
+}
+#recherche {
+  font-size: 14px;
+  margin-left: 860px;
+  width: 300px;
+}
+#recherche h1 {
+  margin-left: -2px;
+  padding: 50px 0px 20px 0px;
+}
+#recherche label,
+#recherche input,
+#recherche select {
+  display: block;
+}
+#recherche label {
+  margin-bottom: 5px;
+}
+#recherche input {
+  width: 250px;
+  font: 14px Verdana, "Sans-serif";
+  border: 3px solid #C1C2C3;
+  margin-bottom: 20px;
+}
+#recherche input#ok {
+  width: 50px;
+  padding: 5px;
+  background-color: #fff;
+  border: opx #fff;
+}
+#recherche select {
+  width: 250px;
+  background-color: #fff;
+  border: 3px solid #C1C2C3;
+  margin-bottom: 20px;
+}
+#description {
+  margin-top: 250px;
+  margin-left: 160px;
+  margin-bottom: 50px;
+  font-size: 14px;
+}
+#description h1 {
+  margin: 50px 0px 20px 0px;
+}
+#description h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+#description article {
+  padding: 10px;
+  background-color: #fff;
+  border: 3px solid #C1C2C3;
+  width: 440px;
+  height: 200px;
+}
+#description article + article {
+  margin-left: 500px;
+  margin-top: -225px;
+}
+.ariane {
+  color: #416DFF;
+  margin: 20px 0px 20px 150px;
+}
+.ariane a {
+  color: #416DFF;
+  text-decoration: none;
+}
+#rechercheOffres {
+  background-color: #C5D9FF;
+  border-top: 3px solid #C1C2C3;
+  border-bottom: 3px solid #C1C2C3;
+  padding-left: 150px;
+}
+#rechercheOffres h1 {
+  margin: 20px 0px 20px 0px;
+}
+#rechercheOffres form {
+  margin-bottom: 20px;
+}
+#rechercheOffres form label {
+  display: block;
+}
+#rechercheOffres form label.region {
+  margin-top: -50px;
+}
+#rechercheOffres form .region {
+  margin-left: 300px;
+}
+#rechercheOffres form label.contrat {
+  margin-top: -50px;
+}
+#rechercheOffres form .contrat {
+  margin-left: 600px;
+}
+#rechercheOffres form select {
+  display: block;
+  margin-right: 20px;
+  width: 200px;
+  background-color: #fff;
+  border: 3px solid #C1C2C3;
+  font: 14px Verdana, "Sans-serif";
+}
+#rechercheOffres form input {
+  display: block;
+  margin-left: 900px;
+  margin-top: -25px;
+}
+#listeOffres {
+  padding-left: 150px;
+}
+#listeOffres h1 {
+  margin: 50px 0px 20px 0px;
+}
+#listeOffres article {
+  width: 450px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 3px solid #C1C2C3;
+  padding: 10px;
+}
+#listeOffres article.offresDroites {
+  float: right;
+  margin-right: 150px;
+  margin-top: -220px;
+}
+#listeOffres article.offresEtroites {
+  width: 350px;
+}
+#listeOffres article.offresDroites.offresEtroites {
+  margin-right: 250px;
+}
+#listeOffres article.offresGauches.offresEtroites {
+  margin-left: 100px;
+}
+#listeOffres article dt,
+#listeOffres article dd {
+  display: inline-block;
+}
 footer {
   background-color: #416DFF;
   font-size: 0.875em;
+  padding: 15px;
 }
 footer h1 {
   font-size: 1.17em;
+  color: #000;
+  margin-bottom: 15px;
+}
+footer div {
+  width: 175px;
+}
+footer div.contact {
+  text-align: right;
+  margin-left: 430px;
+}
+footer div.contact a {
+  margin-left: -30px;
+}
+footer div.services {
+  margin-left: 650px;
+  margin-top: -76px;
+}
+footer div a {
+  color: #0F246C;
+  text-decoration: none;
 }
 /* ==========================================================================
    Helper classes
