@@ -205,9 +205,12 @@ textarea {
    ========================================================================== */
 html {
   font: 16px Verdana, "Sans-serif";
+  background-color: #fff;
 }
 body {
   background-image: url("../img/creampaper.png");
+  border-left: 1px solid #416DFF;
+  border-right: 1px solid #416DFF;
   width: 1280px;
   margin: 0 auto;
 }
@@ -452,11 +455,11 @@ nav li a {
   padding-left: 150px;
 }
 #listeOffres h1 {
-  margin: 50px 0px 20px 0px;
+  margin: 50px 0px 50px 0px;
 }
 #listeOffres article {
   width: 450px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   background-color: #fff;
   border: 3px solid #C1C2C3;
   padding: 10px;
@@ -464,7 +467,7 @@ nav li a {
 #listeOffres article.offresDroites {
   float: right;
   margin-right: 150px;
-  margin-top: -220px;
+  margin-top: -270px;
 }
 #listeOffres article.offresEtroites {
   width: 350px;
@@ -472,12 +475,107 @@ nav li a {
 #listeOffres article.offresDroites.offresEtroites {
   margin-right: 250px;
 }
-#listeOffres article.offresGauches.offresEtroites {
-  margin-left: 100px;
+#listeOffres article.offresDroites.offresLarges {
+  margin-right: 250px;
 }
 #listeOffres article dt,
 #listeOffres article dd {
   display: inline-block;
+}
+#listeOffres article dt {
+  color: #416DFF;
+}
+#listeOffres article dd {
+  width: 300px;
+  margin-bottom: 10px;
+}
+#listeOffres article p {
+  text-align: center;
+  padding: 0px 0px 5px 0px;
+}
+#listeOffres article p a {
+  color: #FF6D01;
+  text-decoration: none;
+}
+#listeOffres article img {
+  float: right;
+}
+#offreEverlasting {
+  padding: 0px 150px 0px 150px;
+}
+#offreEverlasting #logo {
+  float: right;
+}
+#offreEverlasting h1 {
+  padding: 50px 0px 20px 0px;
+}
+#offreEverlasting article p {
+  margin-bottom: 10px;
+  margin-left: 50px;
+  width: 800px;
+}
+#offreEverlasting li {
+  list-style-type: circle;
+  margin-left: 70px;
+  margin-bottom: 10px;
+}
+#offreEverlasting #photoSociete {
+  float: right;
+  margin: 50px;
+  margin-right: 0px;
+}
+#offreEverlasting #contactSociete {
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+#offreEverlasting #contactSociete p {
+  width: 625px;
+}
+#rechercheCandidats {
+  background-color: #C5D9FF;
+  border-top: 3px solid #C1C2C3;
+  border-bottom: 3px solid #C1C2C3;
+  padding-left: 150px;
+}
+#rechercheCandidats h1 {
+  margin: 20px 0px 20px 0px;
+}
+#rechercheCandidats form {
+  margin-bottom: 20px;
+}
+#rechercheCandidats form label {
+  display: block;
+}
+#rechercheCandidats form label.region {
+  margin-top: -50px;
+}
+#rechercheCandidats form .region {
+  margin-left: 300px;
+}
+#rechercheCandidats form label.centreInterets {
+  margin-top: -50px;
+}
+#rechercheCandidats form .centreInterets {
+  margin-left: 600px;
+}
+#rechercheCandidats form select {
+  display: block;
+  margin-right: 20px;
+  width: 200px;
+  background-color: #fff;
+  border: 3px solid #C1C2C3;
+  font: 14px Verdana, "Sans-serif";
+}
+#rechercheCandidats form input {
+  display: block;
+  margin-left: 900px;
+  margin-top: -25px;
+}
+#listeCandidats {
+  padding-left: 150px;
+}
+#listeCandidats h1 {
+  margin: 50px 0px 50px 0px;
 }
 footer {
   background-color: #416DFF;

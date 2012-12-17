@@ -143,10 +143,13 @@ textarea {
    ========================================================================== */
 html{
     font: 16px Verdana, "Sans-serif";
+    background-color: #fff;
 }
 
 body{
     background-image: url("../img/creampaper.png");
+    border-left: 1px solid #416DFF;
+    border-right: 1px solid #416DFF;
     width: 1280px;
     margin: 0 auto;
 }
@@ -398,18 +401,18 @@ nav{
 #listeOffres{
     padding-left: 150px;
     h1{
-        margin: 50px 0px 20px 0px;
+        margin: 50px 0px 50px 0px;
     }
     article{
         width: 450px;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
         background-color:#fff;
         border: 3px solid #C1C2C3;
         padding: 10px;
         &.offresDroites{
             float: right;
             margin-right: 150px;
-            margin-top: -220px;
+            margin-top: -270px;
         }
         &.offresEtroites{
             width: 350px;
@@ -417,12 +420,112 @@ nav{
         &.offresDroites.offresEtroites{
             margin-right: 250px;
         }
-        &.offresGauches.offresEtroites{
-            margin-left: 100px;
+        &.offresDroites.offresLarges{
+            margin-right: 250px;
         }
         dt, dd{
             display: inline-block;
         }
+        dt{
+            color: #416DFF;
+        }
+        dd{
+            width: 300px;
+            margin-bottom: 10px;
+        }
+        p{
+            text-align: center;
+            padding: 0px 0px 5px 0px;
+            a{
+                color: #FF6D01;
+                text-decoration: none;
+            }
+        }
+        img{
+            float: right;
+        }
+    }
+}
+
+#offreEverlasting{  
+    padding: 0px 150px 0px 150px;
+    #logo{
+        float: right;
+    }
+    h1{
+        padding: 50px 0px 20px 0px;
+    }
+    article{
+        p{
+            margin-bottom: 10px;
+            margin-left: 50px;
+            width: 800px;
+        }
+    }
+    li{
+        list-style-type: circle;
+        margin-left: 70px;
+        margin-bottom: 10px;
+    }
+    #photoSociete{
+        float: right;
+        margin: 50px;
+        margin-right: 0px;
+    }
+    #contactSociete{
+        margin-top: 200px;
+        margin-bottom: 50px;
+        p{
+            width:625px;
+        }
+    }
+}
+
+#rechercheCandidats{
+    background-color: #C5D9FF;
+    border-top: 3px solid #C1C2C3;
+    border-bottom: 3px solid #C1C2C3;
+    padding-left: 150px;
+    h1{
+        margin: 20px 0px 20px 0px;
+    }
+    form{
+        margin-bottom: 20px;
+        label{
+            display: block;
+        }
+        label.region{
+            margin-top: -50px;
+        }
+        .region{
+            margin-left: 300px;
+        }
+        label.centreInterets{
+            margin-top: -50px;
+        }
+        .centreInterets{
+            margin-left: 600px;
+        }
+        select{
+            display: block;
+            margin-right: 20px;
+            width: 200px;
+            background-color: #fff;
+            border: 3px solid #C1C2C3;
+            font: 14px Verdana, "Sans-serif";
+        }
+        input{
+            display: block;  
+            margin-left: 900px;
+            margin-top: -25px;
+        }
+    }
+}
+
+#listeCandidats{
+    padding-left: 150px;
+    h1{
+        margin: 50px 0px 50px 0px;
     }
 }
 
@@ -454,12 +557,6 @@ footer{
         }
     }
 }
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
