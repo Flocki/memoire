@@ -205,43 +205,43 @@ textarea {
    ========================================================================== */
 html {
   font: 16px Verdana, "Sans-serif";
-  background-color: #fff;
+  background-color: #888;
 }
 body {
   background-image: url("../img/creampaper.png");
-  border-left: 1px solid #416DFF;
-  border-right: 1px solid #416DFF;
   width: 1280px;
   margin: 0 auto;
 }
 h1 {
   font-weight: bold;
   color: #416DFF;
-  font-size: 25px;
+  font-size: 1.5625em;
+  text-shadow: 3px 3px 3px #ccc;
 }
 .hidden {
   overflow: hidden;
 }
 header {
-  background-color: #416DFF;
+  background-image: url('../img/banniere.png');
   border-bottom: 1px solid #2C49A9;
   height: 9.375em;
 }
 header h1 {
-  color: #000;
+  color: #0F246C;
+  text-shadow: 3px 3px 3px #678AFE;
   font-size: 2.5em;
-  margin-left: 510px;
-  margin-top: -10px;
+  margin-left: 15.25em;
+  margin-top: -0.25em;
 }
 header .slogan {
   color: #fff;
   font-size: 1.5625em;
-  margin-left: 510px;
+  margin-left: 24.5em;
 }
 header div {
   text-align: right;
-  margin-top: -50px;
-  margin-right: 20px;
+  margin-top: -3.125em;
+  margin-right: 1.25em;
 }
 header div a {
   color: #0F246C;
@@ -253,23 +253,24 @@ header a {
   display: inline-block;
 }
 nav {
-  margin-left: 357px;
-  margin-top: -37px;
+  margin-left: 22.3125em;
+  margin-top: -2.3125em;
 }
 nav li {
   display: inline-block;
-  background-color: #C9CACC;
+  background-color: #FD9548;
   padding: 0.5em 0.3em 0.5em 0.3em;
-  height: 20px;
-  width: 150px;
-  -webkit-border-top-left-radius: 20px;
-  -webkit-border-top-right-radius: 20px;
+  height: 1.25em;
+  width: 9.375em;
+  -webkit-border-top-left-radius: 1.25em;
+  -webkit-border-top-right-radius: 1.25em;
+  border-top-left-radius: 1.25em;
+  border-top-right-radius: 1.25em;
   text-align: center;
-  margin-right: 36px;
+  margin-right: 2.25em;
 }
 nav li.actif {
   background-image: url("../img/creampaper.png");
-  background-repeat: no-repeat;
   border-top: 1px solid #2C49A9;
   border-left: 1px solid #2C49A9;
   border-right: 1px solid #2C49A9;
@@ -282,24 +283,112 @@ nav li a {
   color: #fff;
   font-size: 1.2em;
 }
-#derniersInscrits {
-  height: 310px;
+nav li a:hover {
+  color: #FF6D01;
+}
+#recherche {
+  font-size: 0.875em;
   background-color: #C5D9FF;
   border-top: 3px solid #C1C2C3;
   border-bottom: 3px solid #C1C2C3;
-  margin-top: 30px;
-  padding: 20px 120px 20px 160px;
+  margin-top: 2.1429em;
+  padding: 1em;
+  box-shadow: 0px 5px 3px #ddd;
+}
+#recherche h1 {
+  margin-left: -2px;
+  padding-bottom: 1em;
+}
+#recherche label {
+  margin-bottom: 0.36em;
+  display: block;
+}
+#recherche label.region {
+  margin-top: -3.6em;
+}
+#recherche .region {
+  margin-left: 20em;
+}
+#recherche label.domInteret {
+  margin-top: -3.8em;
+}
+#recherche .domInteret {
+  margin-left: 41.4286em;
+}
+#recherche label.motCle {
+  margin-top: -4.1em;
+}
+#recherche .motCle {
+  margin-left: 63em;
+}
+#recherche input {
+  width: 17.8571em;
+  font: 1em Verdana, "Sans-serif";
+  border: 3px solid #C1C2C3;
+}
+#recherche input#ok {
+  width: 3.5714em;
+  height: 25px;
+  padding: 0.3571em;
+  margin: 0em;
+  margin-left: 2.8571em;
+  background-color: #fff;
+}
+#recherche input:focus {
+  border: 3px solid #FFE3CE;
+}
+#recherche select {
+  width: 17.8571em;
+  height: 1.8em;
+  background-color: #fff;
+  border: 3px solid #C1C2C3;
+}
+#recherche select:focus {
+  border: 3px solid #FFE3CE;
+}
+#dernieresOffres {
+  float: left;
+  width: 43.125em;
+  margin-left: 1.25em;
+}
+#dernieresOffres h1 {
+  margin-left: -2px;
+  padding: 30px 0px 30px 0px;
+}
+#dernieresOffres div {
+  width: 700px;
+  font-size: 14px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+#dernieresOffres div dt,
+#dernieresOffres div dd {
+  display: inline-block;
+}
+#dernieresOffres div dt {
+  color: #416DFF;
+}
+#dernieresOffres div a {
+  color: #FF6D01;
+  text-decoration: none;
+  margin-left: 550px;
+}
+#derniersInscrits {
+  width: 31em;
+  float: right;
 }
 #derniersInscrits h1 {
   margin-left: -2px;
+  padding-top: 30px;
 }
 #derniersInscrits article {
   width: 155px;
   display: inline-block;
-  background-color: #95979A;
+  background-color: #FFB47D;
   margin-top: 20px;
   margin-bottom: 15px;
   margin-right: 40px;
+  box-shadow: 3px 3px 4px #ccc;
 }
 #derniersInscrits article img {
   margin: 2px 4px 4px 4px;
@@ -308,79 +397,9 @@ nav li a {
   padding: 5px;
   font-size: 14px;
 }
-#dernieresOffres {
-  float: left;
-  width: 600px;
-  margin-left: 160px;
-}
-#dernieresOffres h1 {
-  margin-left: -2px;
-  padding: 50px 0px 20px 0px;
-}
-#dernieresOffres div {
-  width: 250px;
-  height: 150px;
-  background-color: #fff;
-  border: 3px solid #C1C2C3;
-  font-size: 14px;
-  padding: 5px 5px 0px 5px;
-  margin-bottom: 10px;
-  margin-right: 40px;
-}
-#dernieresOffres div dt,
-#dernieresOffres div dd {
-  display: inline-block;
-}
-#dernieresOffres div.offresPaires {
-  float: right;
-  margin-right: 40px;
-  margin-top: -171px;
-}
-#dernieresOffres div a {
-  color: #FF6D01;
-  text-decoration: none;
-  margin-left: 127px;
-  margin-top: 20px;
-}
-#recherche {
-  font-size: 14px;
-  margin-left: 860px;
-  width: 300px;
-}
-#recherche h1 {
-  margin-left: -2px;
-  padding: 50px 0px 20px 0px;
-}
-#recherche label,
-#recherche input,
-#recherche select {
-  display: block;
-}
-#recherche label {
-  margin-bottom: 5px;
-}
-#recherche input {
-  width: 250px;
-  font: 14px Verdana, "Sans-serif";
-  border: 3px solid #C1C2C3;
-  margin-bottom: 20px;
-}
-#recherche input#ok {
-  width: 50px;
-  padding: 5px;
-  background-color: #fff;
-  border: opx #fff;
-}
-#recherche select {
-  width: 250px;
-  background-color: #fff;
-  border: 3px solid #C1C2C3;
-  margin-bottom: 20px;
-}
 #description {
-  margin-top: 250px;
-  margin-left: 160px;
-  margin-bottom: 50px;
+  margin-top: 950px;
+  margin-left: 1.25em;
   font-size: 14px;
 }
 #description h1 {
@@ -391,15 +410,14 @@ nav li a {
   font-weight: bold;
   margin-bottom: 15px;
   margin-top: 20px;
+  color: #416DFF;
 }
 #description article {
-  padding: 10px;
-  background-color: #fff;
-  border: 3px solid #C1C2C3;
-  width: 440px;
+  width: 476px;
   height: 200px;
 }
 #description article + article {
+  width: 53.1429em;
   margin-left: 500px;
   margin-top: -225px;
 }
@@ -430,26 +448,35 @@ nav li a {
   margin-top: -50px;
 }
 #rechercheOffres form .region {
-  margin-left: 300px;
+  margin-left: 290px;
 }
 #rechercheOffres form label.contrat {
   margin-top: -50px;
 }
 #rechercheOffres form .contrat {
-  margin-left: 600px;
+  margin-left: 580px;
 }
 #rechercheOffres form select {
   display: block;
-  margin-right: 20px;
   width: 200px;
   background-color: #fff;
   border: 3px solid #C1C2C3;
   font: 14px Verdana, "Sans-serif";
 }
+#rechercheOffres form select:focus {
+  border: 3px solid #FFE3CE;
+}
 #rechercheOffres form input {
   display: block;
-  margin-left: 900px;
+  margin-left: 870px;
   margin-top: -25px;
+  width: 50px;
+  background-color: #fff;
+  border: 3px solid #C1C2C3;
+  font: 14px VErdana, "Sans-serif";
+}
+#rechercheOffres form input:focus {
+  border: 3px solid #FFE3CE;
 }
 #listeOffres {
   padding-left: 150px;
@@ -463,6 +490,7 @@ nav li a {
   background-color: #fff;
   border: 3px solid #C1C2C3;
   padding: 10px;
+  box-shadow: 5px 5px 3px #ddd;
 }
 #listeOffres article.offresDroites {
   float: right;
@@ -473,10 +501,10 @@ nav li a {
   width: 350px;
 }
 #listeOffres article.offresDroites.offresEtroites {
-  margin-right: 250px;
+  margin-right: 210px;
 }
 #listeOffres article.offresDroites.offresLarges {
-  margin-right: 250px;
+  margin-right: 210px;
 }
 #listeOffres article dt,
 #listeOffres article dd {
@@ -536,6 +564,7 @@ nav li a {
   border-top: 3px solid #C1C2C3;
   border-bottom: 3px solid #C1C2C3;
   padding-left: 150px;
+  box-shadow: 0px 5px 3px #ddd;
 }
 #rechercheCandidats h1 {
   margin: 20px 0px 20px 0px;
@@ -566,10 +595,20 @@ nav li a {
   border: 3px solid #C1C2C3;
   font: 14px Verdana, "Sans-serif";
 }
+#rechercheCandidats form select:focus {
+  border: 3px solid #FFE3CE;
+}
 #rechercheCandidats form input {
   display: block;
   margin-left: 900px;
   margin-top: -25px;
+  width: 50px;
+  background-color: #fff;
+  border: 3px solid #C1C2C3;
+  font: 14px VErdana, "Sans-serif";
+}
+#rechercheCandidats form input:focus {
+  border: 3px solid #FFE3CE;
 }
 #listeCandidats {
   padding-left: 150px;
@@ -577,14 +616,77 @@ nav li a {
 #listeCandidats h1 {
   margin: 50px 0px 50px 0px;
 }
+#listeCandidats article {
+  background-color: #fff;
+  border: 3px solid #C1C2C3;
+  width: 195px;
+  display: inline-block;
+  margin-right: 40px;
+  margin-bottom: 50px;
+  padding: 5px;
+  box-shadow: 5px 5px 3px #ddd;
+}
+#listeCandidats article img {
+  margin-left: 40px;
+  margin-bottom: 5px;
+}
+#listeCandidats article p {
+  padding: 10px 10px 5px 10px;
+  background-color: #FFE3CE;
+}
+#listeCandidats article p a {
+  color: #FF6D01;
+  text-decoration: none;
+}
+#candidatNewton {
+  margin-top: 75px;
+  margin-left: 150px;
+}
+#candidatNewton #photoCandidat {
+  background-color: #CFD0D2;
+  border: 3px solid #C1C2C3;
+  width: 230px;
+  height: 600px;
+  box-shadow: 5px 5px 3px #ddd;
+}
+#candidatNewton #photoCandidat img {
+  padding: 4px;
+}
+#candidatNewton #contactCandidat {
+  margin-top: 100px;
+  margin-bottom: 125px;
+}
+#candidatNewton #descriptionCandidat {
+  float: right;
+  width: 750px;
+  margin-top: -1000px;
+  margin-right: 50px;
+}
+#candidatNewton article {
+  margin-bottom: 30px;
+}
+#candidatNewton article h2 {
+  font-size: 20px;
+  color: #416DFF;
+  margin-bottom: 10px;
+  text-shadow: 3px 3px 3px #ccc;
+}
+#candidatNewton article h3 {
+  margin-bottom: 5px;
+  margin-top: 15px;
+  color: #FF6D01;
+  text-shadow: 3px 3px 3px #ccc;
+}
 footer {
-  background-color: #416DFF;
+  background-image: url('../img/footer.png');
   font-size: 0.875em;
   padding: 15px;
+  box-shadow: 0px -5px 3px #bbbbbb;
 }
 footer h1 {
   font-size: 1.17em;
-  color: #000;
+  color: #0F246C;
+  text-shadow: 3px 3px 3px #678AFE;
   margin-bottom: 15px;
 }
 footer div {

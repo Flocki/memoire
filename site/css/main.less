@@ -143,13 +143,11 @@ textarea {
    ========================================================================== */
 html{
     font: 16px Verdana, "Sans-serif";
-    background-color: #fff;
+    background-color: #888;
 }
 
 body{
     background-image: url("../img/creampaper.png");
-    border-left: 1px solid #416DFF;
-    border-right: 1px solid #416DFF;
     width: 1280px;
     margin: 0 auto;
 }
@@ -157,7 +155,8 @@ body{
 h1{
     font-weight: bold;
     color: #416DFF;
-    font-size: 25px;
+    font-size: 1.5625em;
+    text-shadow: 3px 3px 3px #ccc;
 }
 
 .hidden{
@@ -165,24 +164,25 @@ h1{
 }
 
 header{
-    background-color: #416DFF;
+    background-image: url('../img/banniere.png');
     border-bottom: 1px solid #2C49A9;
     height: 9.375em;
     h1{
-        color: #000;
+        color: #0F246C;
+        text-shadow: 3px 3px 3px #678AFE;
         font-size: 2.5em;
-        margin-left: 510px;
-        margin-top: -10px;
+        margin-left: 15.25em;
+        margin-top: -0.25em;
     }
     .slogan{
         color: #fff;
         font-size: 1.5625em;
-        margin-left: 510px;
+        margin-left: 24.5em;
     }
     div{
         text-align: right;
-        margin-top: -50px;
-        margin-right: 20px;
+        margin-top: -3.125em;
+        margin-right: 1.25em;
         a{
             color: #0F246C;
             font-weight: bold;
@@ -196,21 +196,25 @@ header{
 }
 
 nav{
-    margin-left: 357px;
-    margin-top: -37px;
+    margin-left: 22.3125em;
+    margin-top: -2.3125em;
     li{
         display: inline-block;
-        background-color: #C9CACC;
+        background-color: #FD9548;
         padding: 0.5em 0.3em 0.5em 0.3em;
-        height: 20px;
-        width: 150px;
-        -webkit-border-top-left-radius: 20px;
-        -webkit-border-top-right-radius: 20px;
+        height: 1.25em;
+        width: 9.375em;
+        -webkit-border-top-left-radius: 1.25em;
+        -webkit-border-top-right-radius: 1.25em;
+        //-moz-border-top-left-radius: 1.25em;
+        //-moz-border-top-right-radius: 1.25em;
+        border-top-left-radius: 1.25em;
+        border-top-right-radius: 1.25em;
         text-align: center;
-        margin-right: 36px;
+        margin-right: 2.25em;
         &.actif{
             background-image: url("../img/creampaper.png");
-            background-repeat: no-repeat;
+            //background-repeat: no-repeat;
             border-top: 1px solid #2C49A9;
             border-left: 1px solid #2C49A9;
             border-right: 1px solid #2C49A9;
@@ -222,27 +226,116 @@ nav{
             text-decoration: none;
             color: #fff;
             font-size: 1.2em;
+            &:hover{
+                color: #FF6D01;
+            }
+        }
+    }
+}
+
+#recherche{
+    font-size: 0.875em;
+    background-color: #C5D9FF;
+    border-top: 3px solid #C1C2C3;
+    border-bottom: 3px solid #C1C2C3;
+    margin-top: 2.1429em;
+    padding: 1em;
+    box-shadow: 0px 5px 3px #ddd;
+    h1{
+        margin-left: -2px;
+        padding-bottom: 1em;
+    }
+    label{
+        margin-bottom: 0.36em;
+        display: block;
+    }
+    label.region{
+        margin-top: -3.6em;
+    }
+    .region{
+        margin-left: 20em;
+    }
+    label.domInteret{
+       margin-top: -3.8em;
+    }
+    .domInteret{
+        margin-left: 41.4286em;
+    }
+    label.motCle{
+        margin-top: -4.1em;
+    }
+    .motCle{
+        margin-left: 63em;
+    }
+    input{
+        width: 17.8571em;
+        font: 1em Verdana, "Sans-serif";
+        border: 3px solid #C1C2C3;
+        &#ok{
+            width: 3.5714em;
+            height: 25px;
+            padding: 0.3571em;
+            margin: 0em;
+            margin-left: 2.8571em;
+            background-color: #fff;
+        }
+        &:focus{
+            border: 3px solid #FFE3CE;
+        }
+    }
+    select{
+        width: 17.8571em;
+        height: 1.8em;
+        background-color: #fff;
+        border: 3px solid #C1C2C3;
+        &:focus{
+            border: 3px solid #FFE3CE;
+        }
+    }
+}
+
+#dernieresOffres{
+    float: left;
+    width: 43.125em;
+    margin-left: 1.25em;
+    h1{
+        margin-left: -2px;
+        padding: 30px 0px 30px 0px;
+    }
+    div{
+        width: 700px;
+        font-size: 14px;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        dt, dd{
+            display: inline-block;
+        }
+        dt{
+            color: #416DFF;
+        }
+        a{
+            color: #FF6D01;
+            text-decoration: none;
+            margin-left: 550px;
         }
     }
 }
 
 #derniersInscrits{
-    height: 310px;
-    background-color: #C5D9FF;
-    border-top: 3px solid #C1C2C3;
-    border-bottom: 3px solid #C1C2C3;
-    margin-top: 30px;
-    padding: 20px 120px 20px 160px;
+    width: 31em;
+    float: right;
     h1{
         margin-left: -2px;
+        padding-top: 30px;
     }
     article{
         width: 155px;
         display: inline-block;
-        background-color: #95979A;
+        background-color: #FFB47D;
         margin-top: 20px;
         margin-bottom: 15px;
         margin-right: 40px;
+        box-shadow: 3px 3px 4px #ccc;
         img{
             margin: 2px 4px 4px 4px;
         }
@@ -253,78 +346,9 @@ nav{
     }
 }
 
-#dernieresOffres{
-    float: left;
-    width: 600px;
-    margin-left: 160px;
-    h1{
-        margin-left: -2px;
-        padding: 50px 0px 20px 0px;
-    }
-    div{
-        width: 250px;
-        height: 150px;
-        background-color: #fff;
-        border: 3px solid #C1C2C3;
-        font-size: 14px;
-        padding: 5px 5px 0px 5px;
-        margin-bottom: 10px;
-        margin-right: 40px;
-        dt, dd{
-            display: inline-block;
-        }
-        &.offresPaires{
-            float: right;
-            margin-right: 40px;
-            margin-top: -171px;
-        }
-        a{
-            color: #FF6D01;
-            text-decoration: none;
-            margin-left: 127px;
-            margin-top: 20px;
-        }
-    }
-}
-
-#recherche{
-    font-size: 14px;
-    margin-left: 860px;
-    width: 300px;
-    h1{
-        margin-left: -2px;
-        padding: 50px 0px 20px 0px;
-    }
-    label, input, select{
-        display: block;
-    }
-    label{
-        margin-bottom: 5px;
-    }
-    input{
-        width: 250px;
-        font: 14px Verdana, "Sans-serif";
-        border: 3px solid #C1C2C3;
-        margin-bottom: 20px;
-        &#ok{
-            width: 50px;
-            padding: 5px;
-            background-color: #fff;
-            border: opx #fff;
-        }
-    }
-    select{
-        width: 250px;
-        background-color: #fff;
-        border: 3px solid #C1C2C3;
-        margin-bottom: 20px;
-    }
-}
-
 #description{
-    margin-top: 250px;
-    margin-left: 160px;
-    margin-bottom: 50px;
+    margin-top: 950px;
+    margin-left: 1.25em;
     font-size: 14px;
     h1{
         margin: 50px 0px 20px 0px;
@@ -334,14 +358,13 @@ nav{
         font-weight: bold;
         margin-bottom: 15px;
         margin-top: 20px;
+        color: #416DFF;
     }
     article{
-        padding: 10px;
-        background-color: #fff;
-        border: 3px solid #C1C2C3;
-        width: 440px;
+        width: 476px;
         height: 200px;
         &+article{
+            width: 53.1429em;
             margin-left: 500px;
             margin-top: -225px;
         }
@@ -374,26 +397,36 @@ nav{
             margin-top: -50px;
         }
         .region{
-            margin-left: 300px;
+            margin-left: 290px;
         }
         label.contrat{
             margin-top: -50px;
         }
         .contrat{
-            margin-left: 600px;
+            margin-left: 580px;
         }
         select{
             display: block;
-            margin-right: 20px;
+           //margin-right: 10px;
             width: 200px;
             background-color: #fff;
             border: 3px solid #C1C2C3;
             font: 14px Verdana, "Sans-serif";
+            &:focus{
+                border: 3px solid #FFE3CE;
+            }
         }
         input{
             display: block;  
-            margin-left: 900px;
+            margin-left: 870px;
             margin-top: -25px;
+            width: 50px;
+            background-color: #fff;
+            border: 3px solid #C1C2C3;
+            font: 14px VErdana, "Sans-serif";
+            &:focus{
+                border: 3px solid #FFE3CE;
+            }
         }
     }
 }
@@ -409,6 +442,7 @@ nav{
         background-color:#fff;
         border: 3px solid #C1C2C3;
         padding: 10px;
+        box-shadow: 5px 5px 3px #ddd;
         &.offresDroites{
             float: right;
             margin-right: 150px;
@@ -418,10 +452,10 @@ nav{
             width: 350px;
         }
         &.offresDroites.offresEtroites{
-            margin-right: 250px;
+            margin-right: 210px;
         }
         &.offresDroites.offresLarges{
-            margin-right: 250px;
+            margin-right: 210px;
         }
         dt, dd{
             display: inline-block;
@@ -486,6 +520,7 @@ nav{
     border-top: 3px solid #C1C2C3;
     border-bottom: 3px solid #C1C2C3;
     padding-left: 150px;
+    box-shadow: 0px 5px 3px #ddd;
     h1{
         margin: 20px 0px 20px 0px;
     }
@@ -513,11 +548,21 @@ nav{
             background-color: #fff;
             border: 3px solid #C1C2C3;
             font: 14px Verdana, "Sans-serif";
+            &:focus{
+                border: 3px solid #FFE3CE;
+            }
         }
         input{
             display: block;  
             margin-left: 900px;
             margin-top: -25px;
+            width: 50px;
+            background-color: #fff;
+            border: 3px solid #C1C2C3;
+            font: 14px VErdana, "Sans-serif";
+            &:focus{
+                border: 3px solid #FFE3CE;
+            }
         }
     }
 }
@@ -527,15 +572,79 @@ nav{
     h1{
         margin: 50px 0px 50px 0px;
     }
+    article{
+        background-color: #fff;
+        border: 3px solid #C1C2C3;
+        width: 195px;
+        display: inline-block;
+        margin-right: 40px;
+        margin-bottom: 50px;
+        padding: 5px;
+        box-shadow: 5px 5px 3px #ddd;
+        img{
+            margin-left: 40px;
+            margin-bottom: 5px;
+        }
+        p{
+            padding: 10px 10px 5px 10px;
+            background-color: #FFE3CE;
+            a{
+                color: #FF6D01;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+#candidatNewton{
+    margin-top: 75px;
+    margin-left: 150px;
+    #photoCandidat{
+        background-color: #CFD0D2;
+        border: 3px solid #C1C2C3;
+        width: 230px;
+        height: 600px;
+        box-shadow: 5px 5px 3px #ddd;
+        img{
+            padding: 4px;
+        }
+    }
+    #contactCandidat{
+        margin-top: 100px;
+        margin-bottom: 125px;
+    }
+    #descriptionCandidat{
+        float: right;
+        width: 750px;
+        margin-top: -1000px;
+        margin-right: 50px;
+    }
+    article{
+        margin-bottom: 30px;
+        h2{
+            font-size: 20px;
+            color: #416DFF;
+            margin-bottom: 10px;
+            text-shadow: 3px 3px 3px #ccc;
+        }
+        h3{
+            margin-bottom: 5px;
+            margin-top: 15px;
+            color: #FF6D01;
+            text-shadow: 3px 3px 3px #ccc;
+        }
+    }
 }
 
 footer{
-    background-color: #416DFF;
+    background-image: url('../img/footer.png');
     font-size: 0.875em;
     padding: 15px;
+    box-shadow: 0px -5px 3px #bbb;
     h1{
         font-size: 1.17em;
-        color: #000;
+        color: #0F246C;
+        text-shadow: 3px 3px 3px #678AFE;
         margin-bottom: 15px;
     }
     div{

@@ -2,14 +2,14 @@
 <html lang="en">
     <head>
             <meta charset="utf-8">
-            <title>Titre du site</title>
+            <title>Media Spot</title>
             <meta name="description" content="...">
             <link type="text/css" rel="stylesheet" href="./css/main.css">
     </head>
     <body>
     	<header>
-            <a href="index.html"><img src="" alt="" width="" height="" /></a>
-            <h1>Titre du site</h1>
+            <a class="logo" href="index.html"><img src="" alt="Logo de Media Spot" width="" height="" /></a>
+            <h1>Media Spot</h1>
             <p class="slogan">Unify the difference</p>
             <div>
                 <a id="inscription" href="./inscription.html">S'inscrire</a>
@@ -25,34 +25,24 @@
     			<li><a href="./galerieCandidats.html">CVs</a></li>
     		</ul>
     	</nav>
-	    <section id="derniersInscrits">
-			<h1>Les derniers inscrits</h1>
-            <article>
-                <h1 class="hidden">Candidat</h1>
-                <a href=""><img src="./img/PhotoNewton.png" alt="Photo de Newton Pham Dang" width="147" height="185" /></a>
-                <p>Journaliste, pianiste et ingénieur du son</p>
-            </article>
-            <article>
-                <h1 class="hidden">Candidat</h1>
-                <a href=""><img src="./img/PhotoNewton.png" alt="Photo de Newton Pham Dang" width="147" height="185" /></a>
-                <p>Journaliste, pianiste et ingénieur du son</p>
-            </article>
-            <article>
-                <h1 class="hidden">Candidat</h1>
-                <a href=""><img src="./img/PhotoNewton.png" alt="Photo de Newton Pham Dang" width="147" height="185" /></a>
-                <p>Journaliste, pianiste et ingénieur du son</p>
-            </article>
-            <article>
-                <h1 class="hidden">Candidat</h1>
-                <a href=""><img src="./img/PhotoNewton.png" alt="Photo de Newton Pham Dang" width="147" height="185" /></a>
-                <p>Journaliste, pianiste et ingénieur du son</p>
-            </article>
-            <article>
-                <h1 class="hidden">Candidat</h1>
-                <a href=""><img src="./img/PhotoNewton.png" alt="Photo de Newton Pham Dang" width="147" height="185" /></a>
-                <p>Journaliste, pianiste et ingénieur du son</p>
-            </article>
-		</section>
+        <section id="recherche">
+            <h1>Recherche</h1>
+            <form method="" action="#">
+                <label class="contrat">Type de contrat</label>
+                <select>
+                    <option>CDD</option>
+                    <option>CDI</option>
+                    <option>Pigiste</option>
+                </select>
+                <label class="region">Région</label>
+                <input type="text" class="region" />
+                <label class="domInteret">Domaine d'activités</label>
+                <input type="text" class="domInteret" />
+                <label class="motCle">Mots-clés</label>
+                <input type="text" class="motCle" />
+                <input type="submit" value="ok" id="ok"/>
+            </form>
+        </section>
         <section id="dernieresOffres">
             <h1>Les dernières offres</h1>
             <div class="offresImpaires">
@@ -61,7 +51,7 @@
                     <dt>Contrat&nbsp;: </dt><dd> non précisé</dd><br />
                     <dt>Poste&nbsp;: </dt><dd> Rédacteurs pour un nouveau projet de magazine. Ecriture d’article et interviews</dd>
                 </dl>
-                <a href="">En savoir plus</a>
+                <a href="./offreEverlasting.html">En savoir plus</a>
             </div>
             <div class="offresPaires">
                 <dl>
@@ -69,7 +59,7 @@
                     <dt>Contrat&nbsp;: </dt><dd> CDD - CDI</dd><br />
                     <dt>Poste&nbsp;: </dt><dd>Conception, rédaction, tournage et montage de programmes télévisuels</dd>
                 </dl>
-                <a href="">En savoir plus</a>
+                <a href="./offreEverlasting.html">En savoir plus</a>
             </div>
             <div class="offresImpaires">
                 <dl>
@@ -77,7 +67,7 @@
                     <dt>Contrat&nbsp;: </dt><dd> non précisé</dd><br />
                     <dt>Poste&nbsp;: </dt><dd> Rédacteurs pour un nouveau projet de magazine. Ecriture d’article et interviews</dd>
                 </dl>
-                <a href="">En savoir plus</a>
+                <a href="./offreEverlasting.html">En savoir plus</a>
             </div>
             <div class="offresPaires">
                 <dl>
@@ -85,7 +75,7 @@
                     <dt>Contrat&nbsp;: </dt><dd> CDD - CDI</dd><br />
                     <dt>Poste&nbsp;: </dt><dd> Conception, rédaction, tournage et montage de programmes télévisuels</dd>
                 </dl>
-                <a href="">En savoir plus</a>
+                <a href="./offreEverlasting.html">En savoir plus</a>
             </div>
             <div class="offresImpaires">
                 <dl>
@@ -93,7 +83,7 @@
                     <dt>Contrat&nbsp;: </dt><dd> non précisé</dd><br />
                     <dt>Poste&nbsp;: </dt><dd> Rédacteurs pour un nouveau projet de magazine. Ecriture d’article et interviews</dd>
                 </dl>
-                <a href="">En savoir plus</a>
+                <a href="./offreEverlasting.html">En savoir plus</a>
             </div>
             <div class="offresPaires">
                 <dl>
@@ -101,32 +91,42 @@
                     <dt>Contrat&nbsp;: </dt><dd> CDD - CDI</dd><br />
                     <dt>Poste&nbsp;: </dt><dd> Conception, rédaction, tournage et montage de programmes télévisuels</dd>
                 </dl>
-                <a href="">En savoir plus</a>
+                <a href="./offreEverlasting.html">En savoir plus</a>
             </div>
         </section>
-        <section id="recherche">
-            <h1>Recherche</h1>
-            <form method="" action="#">
-                <label>Type de contrat</label>
-                <select>
-                    <option>CDD</option>
-                    <option>CDI</option>
-                    <option>Pigiste</option>
-                </select>
-                <label>Région</label>
-                <input type="text" />
-                <label>Domaine d'activités</label>
-                <input type="text" />
-                <label>Mots-clés</label>
-                <input type="text" />
-                <input type="submit" value="OK" id="ok"/>
-            </form>
+        <section id="derniersInscrits">
+            <h1>Les derniers inscrits</h1>
+            <article>
+                <h1 class="hidden">Candidat</h1>
+                <a href="./candidatNewton.html"><img src="./img/PhotoNewton.png" alt="Photo de Newton Pham Dang" width="147" height="185" /></a>
+                <p>Journaliste, pianiste et ingénieur du son</p>
+            </article>
+            <article>
+                <h1 class="hidden">Candidat</h1>
+                <a href="./candidatNewton.html"><img src="./img/PhotoNewton.png" alt="Photo de Newton Pham Dang" width="147" height="185" /></a>
+                <p>Journaliste, pianiste et ingénieur du son</p>
+            </article>
+            <article>
+                <h1 class="hidden">Candidat</h1>
+                <a href="./candidatNewton.html"><img src="./img/PhotoNewton.png" alt="Photo de Newton Pham Dang" width="147" height="185" /></a>
+                <p>Journaliste, pianiste et ingénieur du son</p>
+            </article>
+            <article>
+                <h1 class="hidden">Candidat</h1>
+                <a href="./candidatNewton.html"><img src="./img/PhotoNewton.png" alt="Photo de Newton Pham Dang" width="147" height="185" /></a>
+                <p>Journaliste, pianiste et ingénieur du son</p>
+            </article>
+            <article>
+                <h1 class="hidden">Candidat</h1>
+                <a href="./candidatNewton.html"><img src="./img/PhotoNewton.png" alt="Photo de Newton Pham Dang" width="147" height="185" /></a>
+                <p>Journaliste, pianiste et ingénieur du son</p>
+            </article>
         </section>
         <section id="description">
             <h1>Description</h1>
             <article>
                 <h2>Qu'est ce que ce site ?</h2>
-                <p>Tatata est un site de recrutement pour les jeunes journalistes fraichement diplômés ainsi que pour les employeurs cherchant du personnel.</p>
+                <p>Media Spot est un site de recrutement pour les jeunes journalistes fraichement diplômés ainsi que pour les employeurs cherchant du personnel.</p>
             </article>
             <article>
                 <h2>Pourquoi ce site ?</h2>
