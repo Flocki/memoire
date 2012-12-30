@@ -1,871 +1,97 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-/*
- * HTML5 Boilerplate
- *
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-html,
-button,
-input,
-select,
-textarea {
-  color: #222;
-}
-body {
-  font-size: 1em;
-  line-height: 1.4;
-}
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection declarations have to be separate.
- * Customize the background color to match your design.
- */
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-/*
- * A better looking default horizontal rule
- */
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-/*
- * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
- */
-img {
-  vertical-align: middle;
-}
-/*
- * Remove default fieldset styles.
- */
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-/*
- * Allow only vertical resizing of textareas.
- */
-textarea {
-  resize: vertical;
-}
-/* ==========================================================================
-   Chrome Frame prompt
-   ========================================================================== */
-.chromeframe {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-html {
-  font: 16px Verdana, "Sans-serif";
-  background-color: #888;
-}
-body {
-  background-image: url("../img/creampaper.png");
-  width: 1280px;
-  margin: 0 auto;
-}
-h1 {
-  font-weight: bold;
-  color: #416DFF;
-  font-size: 1.5625em;
-  text-shadow: 3px 3px 3px #ccc;
-}
-.hidden {
-  overflow: hidden;
-}
-header {
-  background-image: url('../img/banniere.png');
-  border-bottom: 1px solid #2C49A9;
-  height: 9.375em;
-}
-header h1 {
-  color: #0F246C;
-  text-shadow: 3px 3px 3px #678AFE;
-  font-size: 2.5em;
-  margin-left: 15.25em;
-  margin-top: -0.25em;
-}
-header .slogan {
-  color: #fff;
-  font-size: 1.5625em;
-  margin-left: 24.5em;
-}
-header div {
-  text-align: right;
-  margin-top: -3.125em;
-  margin-right: 1.25em;
-}
-header div a {
-  color: #0F246C;
-  font-weight: bold;
-}
-header a {
-  text-decoration: none;
-  color: #000;
-  display: inline-block;
-}
-nav {
-  margin-left: 22.3125em;
-  margin-top: -2.3125em;
-}
-nav li {
-  display: inline-block;
-  background-color: #FD9548;
-  padding: 0.5em 0.3em 0.5em 0.3em;
-  height: 1.25em;
-  width: 9.375em;
-  -webkit-border-top-left-radius: 1.25em;
-  -webkit-border-top-right-radius: 1.25em;
-  border-top-left-radius: 1.25em;
-  border-top-right-radius: 1.25em;
-  text-align: center;
-  margin-right: 2.25em;
-}
-nav li.actif {
-  background-image: url("../img/creampaper.png");
-  border-top: 1px solid #2C49A9;
-  border-left: 1px solid #2C49A9;
-  border-right: 1px solid #2C49A9;
-}
-nav li.actif a {
-  color: #416DFF;
-}
-nav li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.2em;
-}
-nav li a:hover {
-  color: #FF6D01;
-}
-#recherche {
-  font-size: 0.875em;
-  background-color: #C5D9FF;
-  border-top: 3px solid #C1C2C3;
-  border-bottom: 3px solid #C1C2C3;
-  margin-top: 2.1429em;
-  padding: 1em;
-  box-shadow: 0px 5px 3px #ddd;
-}
-#recherche h1 {
-  margin-left: -2px;
-  padding-bottom: 1em;
-}
-#recherche label {
-  margin-bottom: 0.36em;
-  display: block;
-}
-#recherche label.region {
-  margin-top: -3.6em;
-}
-#recherche .region {
-  margin-left: 20em;
-}
-#recherche label.domInteret {
-  margin-top: -3.8em;
-}
-#recherche .domInteret {
-  margin-left: 41.4286em;
-}
-#recherche label.motCle {
-  margin-top: -4.1em;
-}
-#recherche .motCle {
-  margin-left: 63em;
-}
-#recherche input {
-  width: 17.8571em;
-  font: 1em Verdana, "Sans-serif";
-  border: 3px solid #C1C2C3;
-}
-#recherche input#ok {
-  width: 3.5714em;
-  height: 25px;
-  padding: 0.3571em;
-  margin: 0em;
-  margin-left: 2.8571em;
-  background-color: #fff;
-}
-#recherche input:focus {
-  border: 3px solid #FFE3CE;
-}
-#recherche select {
-  width: 17.8571em;
-  height: 1.8em;
-  background-color: #fff;
-  border: 3px solid #C1C2C3;
-}
-#recherche select:focus {
-  border: 3px solid #FFE3CE;
-}
-#dernieresOffres {
-  float: left;
-  width: 43.125em;
-  margin-left: 1.25em;
-}
-#dernieresOffres h1 {
-  margin-left: -2px;
-  padding: 30px 0px 30px 0px;
-}
-#dernieresOffres div {
-  width: 700px;
-  font-size: 14px;
-  margin-right: 40px;
-  margin-bottom: 40px;
-}
-#dernieresOffres div dt,
-#dernieresOffres div dd {
-  display: inline-block;
-}
-#dernieresOffres div dt {
-  color: #416DFF;
-}
-#dernieresOffres div a {
-  color: #FF6D01;
-  text-decoration: none;
-  margin-left: 550px;
-}
-#derniersInscrits {
-  width: 31em;
-  float: right;
-}
-#derniersInscrits h1 {
-  margin-left: -2px;
-  padding-top: 30px;
-}
-#derniersInscrits article {
-  width: 155px;
-  display: inline-block;
-  background-color: #FFB47D;
-  margin-top: 20px;
-  margin-bottom: 15px;
-  margin-right: 40px;
-  box-shadow: 3px 3px 4px #ccc;
-}
-#derniersInscrits article img {
-  margin: 2px 4px 4px 4px;
-}
-#derniersInscrits article p {
-  padding: 5px;
-  font-size: 14px;
-}
-#description {
-  margin-top: 950px;
-  margin-left: 1.25em;
-  font-size: 14px;
-}
-#description h1 {
-  margin: 50px 0px 20px 0px;
-}
-#description h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  margin-top: 20px;
-  color: #416DFF;
-}
-#description article {
-  width: 476px;
-  height: 200px;
-}
-#description article + article {
-  width: 53.1429em;
-  margin-left: 500px;
-  margin-top: -225px;
-}
-.ariane {
-  color: #416DFF;
-  margin: 20px 0px 20px 150px;
-}
-.ariane a {
-  color: #416DFF;
-  text-decoration: none;
-}
-#rechercheOffres {
-  background-color: #C5D9FF;
-  border-top: 3px solid #C1C2C3;
-  border-bottom: 3px solid #C1C2C3;
-  padding-left: 150px;
-}
-#rechercheOffres h1 {
-  margin: 20px 0px 20px 0px;
-}
-#rechercheOffres form {
-  margin-bottom: 20px;
-}
-#rechercheOffres form label {
-  display: block;
-}
-#rechercheOffres form label.region {
-  margin-top: -50px;
-}
-#rechercheOffres form .region {
-  margin-left: 290px;
-}
-#rechercheOffres form label.contrat {
-  margin-top: -50px;
-}
-#rechercheOffres form .contrat {
-  margin-left: 580px;
-}
-#rechercheOffres form select {
-  display: block;
-  width: 200px;
-  background-color: #fff;
-  border: 3px solid #C1C2C3;
-  font: 14px Verdana, "Sans-serif";
-}
-#rechercheOffres form select:focus {
-  border: 3px solid #FFE3CE;
-}
-#rechercheOffres form input {
-  display: block;
-  margin-left: 870px;
-  margin-top: -25px;
-  width: 50px;
-  background-color: #fff;
-  border: 3px solid #C1C2C3;
-  font: 14px VErdana, "Sans-serif";
-}
-#rechercheOffres form input:focus {
-  border: 3px solid #FFE3CE;
-}
-#listeOffres {
-  padding-left: 150px;
-}
-#listeOffres h1 {
-  margin: 50px 0px 50px 0px;
-}
-#listeOffres article {
-  width: 450px;
-  margin-bottom: 50px;
-  background-color: #fff;
-  border: 3px solid #C1C2C3;
-  padding: 10px;
-  box-shadow: 5px 5px 3px #ddd;
-}
-#listeOffres article.offresDroites {
-  float: right;
-  margin-right: 150px;
-  margin-top: -270px;
-}
-#listeOffres article.offresEtroites {
-  width: 350px;
-}
-#listeOffres article.offresDroites.offresEtroites {
-  margin-right: 210px;
-}
-#listeOffres article.offresDroites.offresLarges {
-  margin-right: 210px;
-}
-#listeOffres article dt,
-#listeOffres article dd {
-  display: inline-block;
-}
-#listeOffres article dt {
-  color: #416DFF;
-}
-#listeOffres article dd {
-  width: 300px;
-  margin-bottom: 10px;
-}
-#listeOffres article p {
-  text-align: center;
-  padding: 0px 0px 5px 0px;
-}
-#listeOffres article p a {
-  color: #FF6D01;
-  text-decoration: none;
-}
-#listeOffres article img {
-  float: right;
-}
-#offreEverlasting {
-  padding: 0px 150px 0px 150px;
-}
-#offreEverlasting #logo {
-  float: right;
-}
-#offreEverlasting h1 {
-  padding: 50px 0px 20px 0px;
-}
-#offreEverlasting article p {
-  margin-bottom: 10px;
-  margin-left: 50px;
-  width: 800px;
-}
-#offreEverlasting li {
-  list-style-type: circle;
-  margin-left: 70px;
-  margin-bottom: 10px;
-}
-#offreEverlasting #photoSociete {
-  float: right;
-  margin: 50px;
-  margin-right: 0px;
-}
-#offreEverlasting #contactSociete {
-  margin-top: 200px;
-  margin-bottom: 50px;
-}
-#offreEverlasting #contactSociete p {
-  width: 625px;
-}
-#rechercheCandidats {
-  background-color: #C5D9FF;
-  border-top: 3px solid #C1C2C3;
-  border-bottom: 3px solid #C1C2C3;
-  padding-left: 150px;
-  box-shadow: 0px 5px 3px #ddd;
-}
-#rechercheCandidats h1 {
-  margin: 20px 0px 20px 0px;
-}
-#rechercheCandidats form {
-  margin-bottom: 20px;
-}
-#rechercheCandidats form label {
-  display: block;
-}
-#rechercheCandidats form label.region {
-  margin-top: -50px;
-}
-#rechercheCandidats form .region {
-  margin-left: 300px;
-}
-#rechercheCandidats form label.centreInterets {
-  margin-top: -50px;
-}
-#rechercheCandidats form .centreInterets {
-  margin-left: 600px;
-}
-#rechercheCandidats form select {
-  display: block;
-  margin-right: 20px;
-  width: 200px;
-  background-color: #fff;
-  border: 3px solid #C1C2C3;
-  font: 14px Verdana, "Sans-serif";
-}
-#rechercheCandidats form select:focus {
-  border: 3px solid #FFE3CE;
-}
-#rechercheCandidats form input {
-  display: block;
-  margin-left: 900px;
-  margin-top: -25px;
-  width: 50px;
-  background-color: #fff;
-  border: 3px solid #C1C2C3;
-  font: 14px VErdana, "Sans-serif";
-}
-#rechercheCandidats form input:focus {
-  border: 3px solid #FFE3CE;
-}
-#listeCandidats {
-  padding-left: 150px;
-}
-#listeCandidats h1 {
-  margin: 50px 0px 50px 0px;
-}
-#listeCandidats article {
-  background-color: #fff;
-  border: 3px solid #C1C2C3;
-  width: 195px;
-  display: inline-block;
-  margin-right: 40px;
-  margin-bottom: 50px;
-  padding: 5px;
-  box-shadow: 5px 5px 3px #ddd;
-}
-#listeCandidats article img {
-  margin-left: 40px;
-  margin-bottom: 5px;
-}
-#listeCandidats article p {
-  padding: 10px 10px 5px 10px;
-  background-color: #FFE3CE;
-}
-#listeCandidats article p a {
-  color: #FF6D01;
-  text-decoration: none;
-}
-#candidatNewton {
-  margin-top: 75px;
-  margin-left: 150px;
-}
-#candidatNewton #photoCandidat {
-  background-color: #CFD0D2;
-  border: 3px solid #C1C2C3;
-  width: 230px;
-  height: 600px;
-  box-shadow: 5px 5px 3px #ddd;
-}
-#candidatNewton #photoCandidat img {
-  padding: 4px;
-}
-#candidatNewton #contactCandidat {
-  margin-top: 100px;
-  margin-bottom: 125px;
-}
-#candidatNewton #descriptionCandidat {
-  float: right;
-  width: 750px;
-  margin-top: -1000px;
-  margin-right: 50px;
-}
-#candidatNewton article {
-  margin-bottom: 30px;
-}
-#candidatNewton article h2 {
-  font-size: 20px;
-  color: #416DFF;
-  margin-bottom: 10px;
-  text-shadow: 3px 3px 3px #ccc;
-}
-#candidatNewton article h3 {
-  margin-bottom: 5px;
-  margin-top: 15px;
-  color: #FF6D01;
-  text-shadow: 3px 3px 3px #ccc;
-}
-footer {
-  background-image: url('../img/footer.png');
-  font-size: 0.875em;
-  padding: 15px;
-  box-shadow: 0px -5px 3px #bbbbbb;
-}
-footer h1 {
-  font-size: 1.17em;
-  color: #0F246C;
-  text-shadow: 3px 3px 3px #678AFE;
-  margin-bottom: 15px;
-}
-footer div {
-  width: 175px;
-}
-footer div.contact {
-  text-align: right;
-  margin-left: 430px;
-}
-footer div.contact a {
-  margin-left: -30px;
-}
-footer div.services {
-  margin-left: 650px;
-  margin-top: -76px;
-}
-footer div a {
-  color: #0F246C;
-  text-decoration: none;
-}
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-/*
- * Image replacement
- */
-.ir {
-  background-color: transparent;
-  border: 0;
-  overflow: hidden;
-  /* IE 6/7 fallback */
-
-  *text-indent: -9999px;
-}
-.ir:before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 100%;
-}
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
-.hidden {
-  display: none !important;
-  visibility: hidden;
-}
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-}
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
-.invisible {
-  visibility: hidden;
-}
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  /* 1 */
-
-  display: table;
-  /* 2 */
-
-}
-.clearfix:after {
-  clear: both;
-}
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.clearfix {
-  *zoom: 1;
-}
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   Theses examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
-  /* Style adjustments for high resolution devices */
-}
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
-@media print {
-  * {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster: h5bp.com/s */
-  
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-  /*
-       * Don't show links for images, or javascript/internal links
-       */
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: "";
-  }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-  thead {
-    display: table-header-group;
-    /* h5bp.com/t */
-  
-  }
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-  img {
-    max-width: 100% !important;
-  }
-  @page  {
-    margin: 0.5cm;
-  }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+body{line-height:1;}
+ol,ul{list-style:none;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+html,button,input,select,textarea{color:#222;}
+body{font-size:1em;line-height:1.4;}
+::-moz-selection{background:#b3d4fc;text-shadow:none;}
+::selection{background:#b3d4fc;text-shadow:none;}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}
+img{vertical-align:middle;}
+fieldset{border:0;margin:0;padding:0;}
+textarea{resize:vertical;}
+.chromeframe{margin:0.2em 0;background:#ccc;color:#000;padding:0.2em 0;}
+html{font:14px Verdana,"Sans-serif";background-color:#888;}
+body{background-image:url("../img/creampaper.png");width:1280px;margin:0 auto;}
+h1{font-weight:bold;color:#416DFF;font-size:1.43em;text-shadow:3px 3px 3px #ccc;}
+.hidden{overflow:hidden;}
+header{background-image:url('../img/banniere.png');border-bottom:1px solid #2C49A9;height:9.375em;}header h1{color:#0F246C;text-shadow:3px 3px 3px #678AFE;font-size:2.5em;margin-left:15.25em;}
+header div{text-align:right;margin-right:1.25em;}header div a{color:#0F246C;font-weight:bold;}
+header a{text-decoration:none;color:#000;display:inline-block;}
+nav{margin-left:28em;margin-top:-2.3125em;}nav li{display:inline-block;background-color:#FD9548;padding:0.5em 0.3em 0.5em 0.3em;height:1.25em;width:9.375em;-webkit-border-top-left-radius:1.25em;-webkit-border-top-right-radius:1.25em;-moz-border-top-left-radius:1.25em;-moz-border-top-right-radius:1.25em;border-top-left-radius:1.25em;border-top-right-radius:1.25em;text-align:center;margin-right:2.25em;}nav li.actif{background-image:url("../img/creampaper.png");border-top:1px solid #2C49A9;border-left:1px solid #2C49A9;border-right:1px solid #2C49A9;}nav li.actif a{color:#416DFF;}
+nav li a{text-decoration:none;color:#fff;font-size:1em;}nav li a:hover{color:#FF6D01;}
+#slogan{font-weight:bold;font-size:1.79em;text-align:center;margin-top:1.5em;margin-bottom:0.5em;color:#FF6D01;}
+#recherche{font-size:0.875em;background-color:#C5D9FF;border-top:3px solid #C1C2C3;border-bottom:3px solid #C1C2C3;margin-top:2.1429em;padding:1em;box-shadow:0px 5px 3px #ddd;}#recherche h1{margin-left:-2px;padding-bottom:1em;}
+#recherche label{margin-bottom:0.36em;display:block;}
+#recherche label.region{margin-top:-3.5em;}
+#recherche .region{margin-left:20em;}
+#recherche label.domInteret{margin-top:-3.5em;}
+#recherche .domInteret{margin-left:41.4286em;}
+#recherche label.motCle{margin-top:-3.65em;}
+#recherche .motCle{margin-left:63em;}
+#recherche input{width:17.8571em;font:1em Verdana,"Sans-serif";border:3px solid #C1C2C3;height:1.25em;}#recherche input#ok{width:3.5714em;padding:0.3571em;height:1.8em;line-height:0.5em;margin:0em;margin-left:2.8571em;margin-bottom:-0.4em;background-color:#fff;}
+#recherche input:focus{border:3px solid #FFE3CE;}
+#recherche select{width:17.8571em;font:1em Verdana,"Sans-serif";height:1.8em;background-color:#fff;border:3px solid #C1C2C3;}#recherche select:focus{border:3px solid #FFE3CE;}
+#dernieresOffres{float:left;width:43.125em;margin-left:1.25em;}#dernieresOffres h1{margin-left:-2px;padding:30px 0px 20px 0px;}
+#dernieresOffres div{width:700px;margin-right:40px;margin-bottom:15px;}#dernieresOffres div dt,#dernieresOffres div dd{display:inline-block;}
+#dernieresOffres div dt{color:#416DFF;}
+#dernieresOffres div a{color:#FF6D01;text-decoration:none;margin-left:550px;}
+#derniersInscrits{width:31em;float:right;}#derniersInscrits h1{margin-left:-2px;padding-top:30px;}
+#derniersInscrits article{width:125px;display:inline-block;background-color:#FFB47D;margin-top:20px;margin-bottom:15px;margin-right:40px;box-shadow:3px 3px 4px #ccc;}#derniersInscrits article img{display:block;margin:5px auto;}
+#derniersInscrits article p{padding:5px;font-size:12px;}
+#description{margin-top:650px;margin-left:1.25em;font-size:14px;}#description h1{margin:50px 0px 20px 0px;}
+#description h2{font-size:16px;font-weight:bold;margin-bottom:15px;margin-top:20px;color:#416DFF;}
+#description article{width:476px;height:150px;}#description article+article{width:53.1429em;margin-left:500px;margin-top:-170px;}
+.ariane{color:#416DFF;margin:20px 0px 20px 20px;}.ariane a{color:#416DFF;text-decoration:none;}
+#listeOffres{padding-left:20px;width:65em;}#listeOffres h1{margin:50px 0px 50px 0px;}
+#listeOffres article{width:390px;margin-bottom:50px;}#listeOffres article dl{margin-top:-80px;}
+#listeOffres article.offresEtroites dl{margin-top:-15px;}
+#listeOffres article.offresEtroites.articleDroiteUn{float:right;margin-top:-195px;}
+#listeOffres article.offresEtroites.articleDroiteDeux{float:right;margin-top:-195px;}
+#listeOffres article.offresEtroites.articleDroiteTrois{float:right;margin-top:-195px;}
+#listeOffres article dt,#listeOffres article dd{display:inline-block;}
+#listeOffres article dt{color:#416DFF;margin-left:170px;}
+#listeOffres article dd{margin-bottom:10px;}
+#listeOffres article p{margin-left:170px;padding:0px 0px 5px 0px;}#listeOffres article p a{color:#FF6D01;text-decoration:none;}
+#rechercheOffres{float:right;width:200px;margin-right:30px;margin-top:-670px;border-left:2px solid #FF6D01;padding-left:20px;}#rechercheOffres h1{margin:20px 0px 20px 0px;}
+#rechercheOffres ul{margin-bottom:20px;}#rechercheOffres ul h2{font-size:16px;font-weight:bold;color:#416DFF;margin-top:20px;}
+#rechercheOffres ul li{margin-left:15px;margin-top:5px;}
+#rechercheOffres ul a{text-decoration:none;color:#000;}
+#offreEverlasting{padding:0px 150px 0px 150px;}#offreEverlasting #logo{float:right;}
+#offreEverlasting h1{padding:50px 0px 20px 0px;}
+#offreEverlasting article p{margin-bottom:10px;margin-left:50px;width:800px;}#offreEverlasting article p span{font-weight:bold;}
+#offreEverlasting article p a{text-decoration:none;color:#FF6D01;font-size:16px;font-weight:bold;}
+#offreEverlasting li{list-style-type:circle;margin-left:70px;margin-bottom:10px;}
+#offreEverlasting #photoSociete{float:right;margin:50px;margin-right:0px;}
+#offreEverlasting #contactSociete{margin-top:200px;margin-bottom:50px;}#offreEverlasting #contactSociete p{width:625px;}
+#offreEverlasting #contactSociete form{float:right;margin-top:-100px;margin-right:100px;}#offreEverlasting #contactSociete form input{width:150px;height:30px;border:3px solid #C1C2C3;-webkit-border-radius:5px;font-style:italic;color:#FF6D01;box-shadow:3px 3px 3px #ccc;}
+#listeCandidats{padding-left:20px;width:1000px;}#listeCandidats h1{margin:50px 0px 50px 0px;}
+#listeCandidats article{width:195px;display:inline-block;margin-right:40px;margin-bottom:50px;padding:5px;}#listeCandidats article img{margin-left:40px;margin-bottom:5px;box-shadow:5px 5px 3px #ddd;}
+#listeCandidats article p{padding:10px 10px 5px 10px;background-color:#FFE3CE;box-shadow:5px 5px 3px #ddd;}#listeCandidats article p a{color:#FF6D01;text-decoration:none;}
+#rechercheCandidats{float:right;width:200px;margin-right:30px;margin-top:-1207px;border-left:2px solid #FF6D01;padding-left:20px;}#rechercheCandidats h1{margin:20px 0px 20px 0px;}
+#rechercheCandidats ul{margin-bottom:20px;}#rechercheCandidats ul h2{font-size:16px;font-weight:bold;color:#416DFF;margin-top:20px;}
+#rechercheCandidats ul li{margin-left:15px;margin-top:5px;}
+#rechercheCandidats ul a{text-decoration:none;color:#000;}
+#candidatNewton{margin-top:75px;margin-left:150px;}#candidatNewton #photoCandidat{background-color:#CFD0D2;border:3px solid #C1C2C3;width:230px;height:600px;box-shadow:5px 5px 3px #ddd;}#candidatNewton #photoCandidat img{padding:4px;}
+#candidatNewton #contactCandidat{margin-top:100px;margin-bottom:50px;}
+#candidatNewton #descriptionCandidat{float:right;width:750px;margin-top:-1000px;margin-right:50px;}
+#candidatNewton article{margin-bottom:30px;}#candidatNewton article h2{font-size:20px;color:#416DFF;margin-bottom:10px;text-shadow:3px 3px 3px #ccc;}
+#candidatNewton article h3{margin-bottom:5px;margin-top:15px;color:#FF6D01;text-shadow:3px 3px 3px #ccc;}
+#candidatNewton #pdf a{text-decoration:none;color:#FF6D01;margin-bottom:50px;}
+footer{background-image:url('../img/footer.png');font-size:0.875em;padding:15px;box-shadow:0px -5px 3px #bbbbbb;}footer h1{font-size:1.17em;color:#0F246C;text-shadow:3px 3px 3px #678AFE;margin-bottom:15px;}
+footer div{width:175px;}footer div.contact{text-align:right;margin-left:430px;}footer div.contact a{margin-left:-30px;}
+footer div.services{margin-left:650px;margin-top:-65px;}
+footer div a{color:#0F246C;text-decoration:none;}
+.ir{background-color:transparent;border:0;overflow:hidden;*text-indent:-9999px;}
+.ir:before{content:"";display:block;width:0;height:100%;}
+.hidden{display:none !important;visibility:hidden;}
+.visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;}
+.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto;}
+.invisible{visibility:hidden;}
+.clearfix:before,.clearfix:after{content:" ";display:table;}
+.clearfix:after{clear:both;}
+.clearfix{*zoom:1;}
+@media only screen and (min-width:35em){}@media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min-resolution:144dpi){}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important;} a,a:visited{text-decoration:underline;} a[href]:after{content:" (" attr(href) ")";} abbr[title]:after{content:" (" attr(title) ")";} .ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:"";} pre,blockquote{border:1px solid #999;page-break-inside:avoid;} thead{display:table-header-group;} tr,img{page-break-inside:avoid;} img{max-width:100% !important;} @page {margin:0.5cm;}p,h2,h3{orphans:3;widows:3;} h2,h3{page-break-after:avoid;}}
